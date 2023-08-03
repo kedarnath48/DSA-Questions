@@ -1,4 +1,4 @@
-//Memoization
+//Memoization method
 int f(vector<int> &dp,vector<int> &height,int n,int k){
     if(n <= 0){
         return 0;
@@ -26,7 +26,7 @@ int minimizeCost(int n, int k, vector<int> &height){
     return f(dp,height,n-1,k);
 }
 
-//Tabulation
+//Tabulation method
 int minimizeCost(int n, int k, vector<int> &height){
     // Write your code here.
     vector<int> dp(n+1);
